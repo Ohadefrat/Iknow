@@ -1,0 +1,19 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+    <StackLayout>
+        <Label class="levelLBL" text="LEVEL {{level}}" textWrap="true"></Label>
+        <Progress id="progress" class="progress" value="{{progressvalue}}">
+        </Progress>
+        <GridLayout class="gridlo" columns="*,*,*" rows="*,*,*,*">
+            <Label class="quiLBL" col="0" row="0" text="{{number1}}"></Label>
+            <Label class="quiLBL" col="1" row="0" text="{{operator}}"></Label>
+            <Label class="quiLBL" col="2" row="0" text="{{number2}}"></Label>
+            <Label class="quiLBL" col="1" row="1" text="="></Label>
+            <TextField class="textFieldBL" col="1" row="2" hint="?" [(ngModel)]="result" keyboardType="number"
+                height="100"></TextField>
+            <Button id="textfield" class="quiLBL" col="1" row="3" text="Submit" class="btn btn-primary"
+                (tap)="submitBtn()"></Button>
+        </GridLayout>
+
+
+    </StackLayout>
+</Page>

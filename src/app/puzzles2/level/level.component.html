@@ -1,0 +1,32 @@
+<StackLayout>
+
+    <Label class ="lvllbl" text="Level {{level}}" textWrap="true"></Label>
+    <Label class ="namelbl" text="{{name}}" textWrap="true"></Label>
+    <Label class ="scorelbl" text="Score: {{score}}" textWrap="true"></Label>
+    <AbsoluteLayout class="gridlo" width="350" height="600" backgroundColor="#D6D555">
+        
+        <Label class="pickOne" text="pick on" left="100" top="400" width="108" height="100" textWrap="true"
+            backgroundColor="black"></Label>
+        <Label class="firstlbl" id="firstlbl" #dragImage #ref left="100" top="400" width="108" height="100"
+            (pan)="onPan5(1,$event)" isEnabled={{firstlblEnable}}></Label>
+        <Label class="seclbl" id="seclbl" #dragImage1 #ref left="100" top="400" width="108" height="100"
+        (pan)="onPan5(2,$event)" isEnabled="{{seclblEnable}}"></Label>
+        <Label class="trlbl" id="trlbl" #dragImage2 #ref left="100" top="400" width="108" height="100" (pan)="onPan5(3,$event)"
+            isEnabled="{{trlblEnable}}"></Label>
+        <Label class="foulbl" id="foulbl" #dragImage3 #ref left="100" top="400" width="108" height="100"
+        (pan)="onPan5(4,$event)" isEnabled="{{foulblEnable}}"></Label>
+        <Label class="fivelbl" id="fivelbl" #dragImage3 #ref left="100" top="400" width="108" height="100"
+        (pan)="onPan5(5,$event)" isEnabled="{{fivelblEnable}}"></Label>
+        <Label class="sixlbl" id="sixlbl" #dragImage3 #ref left="100" top="400" width="108" height="100"
+        (pan)="onPan5(6,$event)" isEnabled="{{sixlblEnable}}"></Label>
+        <Label class="sevenlbl" id="sevenlbl" #dragImage3 #ref left="100" top="400" width="108" height="100"
+        (pan)="onPan5(7,$event)" isEnabled="{{sevenlblEnable}}"></Label>
+        <Label class="eightlbl" id="eightlbl" #dragImage3 #ref left="100" top="400" width="108" height="100"
+        (pan)="onPan5(8,$event)" isEnabled="{{eightlblEnable}}"></Label>
+        <Label class="ninelbl" id="ninelbl" #dragImage3 #ref left="100" top="400" width="108" height="100"
+        (pan)="onPan5(9,$event)" isEnabled="{{ninelblEnable}}"></Label>
+    
+    
+    
+    </AbsoluteLayout>
+    </StackLayout>

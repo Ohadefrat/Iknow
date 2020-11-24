@@ -1,0 +1,21 @@
+<StackLayout>
+    <Label class="lvllbl" text="Level {{level}}" textWrap="true"></Label>
+    <Label class="namelbl" text="{{name}}" textWrap="true"></Label>
+    <Label class="scorelbl" text="Score: {{score}}" textWrap="true"></Label>
+    <AbsoluteLayout class="gridlo" width="350" height="600" backgroundColor="#D6D555">
+        <Label class="borders" text="" textWrap="true"top ="200" left="20" width="150" height="200"></Label>
+        <Label class="borders" text="" textWrap="true"top ="200" left="170" width="150" height="200"></Label>
+        <Label class="borders" text="" textWrap="true"top ="0" left="20" width="150" height="200"></Label>
+        <Label class="borders" text="" textWrap="true"top ="0" left="170" width="150" height="200"></Label>
+        <Label class="firstlbl" id="firstlbl" #dragImage #ref left="75" top="400" width="150" height="200"
+            (pan)="onPan5(1,$event)" isEnabled={{firstlblEnable}}></Label>
+        <Label class="seclbl" id="seclbl" #dragImage1 #ref left="75" top="400" width="150" height="200"
+            (pan)="onPan5(2,$event)" isEnabled="{{seclblEnable}}"></Label>
+        <Label class="trlbl" id="trlbl" #dragImage2 #ref left="75" top="400" width="150" height="200"
+            (pan)="onPan5(3,$event)" isEnabled="{{trlblEnable}}"></Label>
+        <Label class="foulbl" id="foulbl" #dragImage3 #ref left="75" top="400" width="150" height="200"
+            (pan)="onPan5(4,$event)" isEnabled="{{foulblEnable}}"></Label>
+
+    </AbsoluteLayout>
+</StackLayout>
+<!--button class="subbtn" (tap)="checkcolor()"></button-->

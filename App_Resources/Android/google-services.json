@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "89716833110",
+    "firebase_url": "https://iknow-287007.firebaseio.com",
+    "project_id": "iknow-287007",
+    "storage_bucket": "iknow-287007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89716833110:android:8351543b04eb668c54b4f7",
+        "android_client_info": {
+          "package_name": "org.nativescript.IknowApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89716833110-b12j6ljkl5pfsetsnp87ps4r9f2uob5u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.nativescript.IknowApp",
+            "certificate_hash": "9b8ece4df7a25b52d2562a28adb0776be1617967"
+          }
+        },
+        {
+          "client_id": "89716833110-vvm00r9crk4k3hehtt5debhe0o7d1e5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs4nD1MSJN7mrlLYSumLY3xbqA3TtLq_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89716833110-vvm00r9crk4k3hehtt5debhe0o7d1e5r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "89716833110-m6umt81mqrg2t84bhrfprt8d4t68575u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.nativescript.IknowApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

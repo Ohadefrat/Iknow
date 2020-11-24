@@ -1,0 +1,22 @@
+.questionLBL{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(6, 2, 37)
+
+}
+.monkey{
+    text-align: center;
+    font-size: 20px;
+    color:rgb(0, 0, 0)
+}
+.lion{
+    text-align: center;
+    font-size: 20px;
+    color:rgb(0, 0, 0)
+}
+
+.dialoglbl{
+    background: linear-gradient(to bottom, rgb(182, 255, 255), rgb(87, 234, 245), rgb(0, 90, 121));
+    border-radius:20
+
+}

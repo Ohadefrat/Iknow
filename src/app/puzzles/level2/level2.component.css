@@ -1,0 +1,86 @@
+/* Add mobile styles for the component here.  */
+@import 'nativescript-theme-core/css/core.light.css';
+
+.gridlo{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.firstlbl{
+    border: 1px solid black;
+    background-image: url("~/app/assets/monkey.png") black;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: 0% 0%;
+    border-width:5px;  
+    border-style:solid;
+    
+}
+
+.seclbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("~/app/assets/monkey.png") black;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position:  100% 0%;
+    border-width:5px;  
+    border-style:solid;
+}
+.trlbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("~/app/assets/monkey.png") black;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position:  100% 167%;
+    border-width:5px;  
+    border-style:solid;
+}
+.foulbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("~/app/assets/monkey.png") black;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position:  0% 167%;
+    border-width:5px;  
+    border-style:solid;
+}
+
+.borders{
+    border-width:5px;  
+    border-style:solid;
+    border-color: black;
+    
+}
+
+.picOne{
+    background-color: black;
+}
+/*.subbtn{
+    background-image: url("https://cdn4.iconfinder.com/data/icons/universal-icons/120/vector_288_02-512.png");
+    background-repeat: no-repeat;
+    background-size: 500 500;
+    height: 120;
+    width: 120;
+}*/
+.quizlbl{
+    border: 1px solid black;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    
+}
+
+
+.lvllbl{
+    text-align: center;
+    margin-top:150px;
+    font-size: 30px;
+    height: 300px;
+}

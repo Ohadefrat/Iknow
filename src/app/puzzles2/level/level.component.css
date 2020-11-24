@@ -1,0 +1,122 @@
+/* Add mobile styles for the component here.  */
+.gridlo{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.firstlbl{
+    border: 1px solid black;
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX15900270.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400 1200;
+    border-width:5px;  
+    border-style:solid;
+    
+}
+
+.seclbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX15900270.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400 1200;
+    background-position:  -933px 0px;
+    border-width:5px;  
+    border-style:solid;
+}
+.trlbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX15900270.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400 1200;
+    background-position:  -933px -800px;
+    border-width:5px;  
+    border-style:solid;
+}
+.foulbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX15900270.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400 1200;
+    background-position:  -68px -800px;
+    border-width:5px;  
+    border-style:solid;
+}
+.fivelbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX15900270.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400 1200;
+    background-position:  -500px 0px;
+    border-width:5px;  
+    border-style:solid;
+}
+.sixlbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX15900270.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400 1200;
+    background-position:  -68px -400px;
+    border-width:5px;  
+    border-style:solid;
+}
+.sevenlbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX15900270.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400 1200;
+    background-position:  -500px -800px;
+    border-width:5px;  
+    border-style:solid;
+}
+.eightlbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX15900270.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400 1200;
+    background-position:  -500px -400px;
+    border-width:5px;  
+    border-style:solid;
+}
+.ninelbl{
+    float: right;
+    border: 50px solid black;
+    background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX15900270.jpg");
+    background-repeat: no-repeat;
+    background-size: 1400 1200;
+    background-position:  -933px -400px;
+    border-width:5px;  
+    border-style:solid;
+    
+}
+
+.lvllbl{
+    text-align: center;
+    margin-top:150px;
+    font-size: 30px;
+    height: 300px
+}
+
+.picOne{
+    background-color: black;
+}
+/*.subbtn{
+    background-image: url("https://cdn4.iconfinder.com/data/icons/universal-icons/120/vector_288_02-512.png");
+    background-repeat: no-repeat;
+    background-size: 500 500;
+    height: 120;
+    width: 120;
+}*/
+.quizlbl{
+    border: 1px solid black;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    
+}

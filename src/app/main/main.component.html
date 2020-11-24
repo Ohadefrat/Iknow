@@ -1,0 +1,16 @@
+<StackLayout>
+    
+    <Image  class="userimage" src="{{image}}"></Image>
+      
+    
+    <Label class ="lvllbl" text="Level {{level}}" textWrap="true"></Label>
+    <Label class ="scorelbl" text="Score: {{score}}" textWrap="true"></Label>
+    <Label class ="username" text="hello {{name}}" textWrap="true"></Label>
+    <Button class="mgLBL" text="Puzzle" textWrap="true" (tap)="openPuzzleComp()"></Button>
+    <Button class="mgLBL" text="Arithmetic" textWrap="true" (tap)="openArithmeticComp()"></Button>
+    <Button class="logoutbtn" text="Logout" class="btn btn-primary" (tap)="logoutGoogle()"></Button>
+</StackLayout>
+
+
+
+

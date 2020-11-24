@@ -1,0 +1,10 @@
+<ModalStack dismissEnabled="false" class="modal-container">
+    <AbsoluteLayout id="dialoglbl" class="dialoglbl" height="400" width="360" borderRadius="100">
+        <Label class="questionLBL" text="The   ______   like to eat Bananas!" textWrap="true" top="50"
+            left="40"></Label>
+        <Label class="monkey" text="Monkey" #ref textWrap="true" top="200" left="50" (pan)="onPan5(1,$event)"
+            isEnabled={{firstWordlblEnable}}></Label>
+        <Label class="lion" text="Lion" #ref textWrap="true" top="200" (pan)="onPan5(2,$event)" left="250"
+            sEnabled="{{secWordlblEnable}}"></Label>
+    </AbsoluteLayout>
+</ModalStack>

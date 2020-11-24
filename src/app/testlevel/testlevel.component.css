@@ -1,0 +1,56 @@
+/* Add mobile styles for the component here.  */
+.gridlo{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.firstlbl{
+    border: 1px solid black;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/810I5PEIM4L._AC_SX522_.jpg");
+    background-repeat: no-repeat;
+    background-size: 1800 1500;
+    
+}
+
+.seclbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/810I5PEIM4L._AC_SX522_.jpg");
+    background-repeat: no-repeat;
+    background-size: 1800 1500;
+    background-position:  -600px 0px;
+}
+.trlbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/810I5PEIM4L._AC_SX522_.jpg");
+    background-repeat: no-repeat;
+    background-size: 1800 1500;
+    background-position:  -600px -800px;
+}
+.foulbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/810I5PEIM4L._AC_SX522_.jpg");
+    background-repeat: no-repeat;
+    background-size: 1800 1500;
+    background-position:  0px -800px;
+}
+
+.picOne{
+    background-color: black;
+}
+/*.subbtn{
+    background-image: url("https://cdn4.iconfinder.com/data/icons/universal-icons/120/vector_288_02-512.png");
+    background-repeat: no-repeat;
+    background-size: 500 500;
+    height: 120;
+    width: 120;
+}*/
+.quizlbl{
+    border: 1px solid black;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    
+}

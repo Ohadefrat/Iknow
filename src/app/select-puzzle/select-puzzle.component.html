@@ -1,0 +1,41 @@
+<StackLayout orientation="vertical" class="gridlbl">
+    <image class="selectlevel" src="~/app/assets/selectlevel.png"></image>
+    <AbsoluteLayout class="absu-sel-btn" width="400" height="300" top="350" backgroundColor="lightgray">
+        <StackLayout class="stk-lvl-lyout1" backgroungColor ="black" left ="65" top="25">
+            <Button class="abs-btn" text="level 1" (tap)="openlevel(1)"></Button>
+            <StackLayout orientation="horizontal" >
+                <AbsoluteLayout id="one-one" class="abs-btn-lbl"></AbsoluteLayout>
+                <AbsoluteLayout id="one-two" class="abs-btn-lbl"></AbsoluteLayout>
+                <AbsoluteLayout id="one-tre" class="abs-btn-lbl"></AbsoluteLayout>
+                <AbsoluteLayout id="one-for" class="abs-btn-lbl"></AbsoluteLayout>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout class="stk-lvl-lyout2" backgroungColor ="black" left="225" top="25">
+            <Button id="abs-btn2" class="abs-btn" text="level 2" (tap)="openlevel(2)" isEnabled="false" ></Button>
+            <StackLayout orientation="horizontal" class="levelcheck">
+                <AbsoluteLayout id="two-one" class="abs-btn-lbl"></AbsoluteLayout>
+                <AbsoluteLayout id="two-two" class="abs-btn-lbl"></AbsoluteLayout>
+                <AbsoluteLayout id="two-tre" class="abs-btn-lbl"></AbsoluteLayout>
+                <AbsoluteLayout id="two-for" class="abs-btn-lbl"></AbsoluteLayout>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout class="stk-lvl-lyout3" backgroungColor ="black"  left="65" top="150">
+            <Button id="abs-btn3" class="abs-btn" text="level 3" (tap)="openlevel(3)" isEnabled="false"></Button>
+            <StackLayout orientation="horizontal" >
+                <AbsoluteLayout id="three-one" class="abs-btn-lbl"></AbsoluteLayout>
+                <AbsoluteLayout id="three-two" class="abs-btn-lbl"></AbsoluteLayout>
+                <AbsoluteLayout id="three-tre" class="abs-btn-lbl"></AbsoluteLayout>
+                <AbsoluteLayout id="three-for" class="abs-btn-lbl"></AbsoluteLayout>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout class="stk-lvl-lyout4" backgroungColor ="black" left="225" top="150">
+            <Button  id="abs-btn4" class="abs-btn" text="level 4" (tap)="openlevel(4)" isEnabled="false"></Button>
+            <StackLayout orientation="horizontal" >
+                <AbsoluteLayout id="four-one" class="abs-btn-lbl"></AbsoluteLayout>
+                <AbsoluteLayout id="four-two" class="abs-btn-lbl"></AbsoluteLayout>
+                <AbsoluteLayout id="four-tre" class="abs-btn-lbl"></AbsoluteLayout>
+                <AbsoluteLayout id="four-for" class="abs-btn-lbl"></AbsoluteLayout>
+            </StackLayout>
+        </StackLayout>
+    </AbsoluteLayout>
+</StackLayout>

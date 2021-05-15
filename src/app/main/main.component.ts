@@ -5,7 +5,11 @@ import {setString,getString} from "tns-core-modules/application-settings";
 import {ActivatedRoute} from "@angular/router"
 import { NavigationExtras } from "@angular/router"
 import { device, screen, isAndroid, isIOS } from "tns-core-modules/platform";
-
+import { AbsoluteLayout, Page } from "tns-core-modules/ui";
+import * as application from "tns-core-modules/application";
+import { EventData } from "tns-core-modules/ui/page";
+var orientation = require('nativescript-orientation');
+orientation.disableRotation();
 export function onNavigatingTo(args) {
 
 }
@@ -24,33 +28,26 @@ export class MainComponent implements OnInit {
     public image: string
     public level: number
     public score: number
+    public level_Position: any
+    public myAbsoluteLayout;
+    isVisible: boolean = true;
 
 
 
-    constructor(private router: RouterExtensions, private route: ActivatedRoute) {
+    constructor(private router: RouterExtensions, private route: ActivatedRoute,private page: Page) {
+        this.page.on(application.AndroidApplication.activityBackPressedEvent, this.onBackButtonTap, this);
 
 
     }
-
+    onBackButtonTap(data: EventData) {
+        
+            this.router.navigate(['/main']);
+       
+    }
     ngOnInit(): void {
-        console.log(`Running on Android? ${isAndroid}`);
-        console.log(`Running on iOS? ${isIOS}`);
-    
-        console.log(`device.model ${device.model}`); // For example: "Nexus 5" or "iPhone".
-        console.log(`device.deviceType ${device.deviceType}`); // "Phone" | "Tablet"
-        console.log(`device.os ${device.os}`); // For example: "Android" or "iOS".
-        console.log(`device.osVersion ${device.osVersion}`); // For example: 4.4.4(android), 8.1(ios)
-        console.log(`device.sdkVersion ${device.sdkVersion}`); //  For example: 19(android), 8.1(ios).
-        console.log(`device.language ${device.language}`); // For example "en" or "en-US".
-        console.log(`device.manufacturer ${device.manufacturer}`); // For example: "Apple" or "HTC" or "Samsung".
-        console.log(`device.uuid ${device.uuid}`); // The unique identification number
-        console.log(`device.region ${device.region}`); //  For example "US".
-    
-        console.log(`screen.mainScreen.heightDIPs ${screen.mainScreen.heightDIPs}`); // The absolute height of the screen in density independent pixels.
-        console.log(`screen.mainScreen.heightPixels ${screen.mainScreen.heightPixels}`); // The absolute height of the screen in pixels.
-        console.log(`screen.mainScreen.scale ${screen.mainScreen.scale}`); // The logical density of the display.
-        console.log(`screen.mainScreen.widthDIPs ${screen.mainScreen.widthDIPs}`); // The absolute width of the screen in density independent pixels.
-        console.log(`screen.mainScreen.widthPixels ${screen.mainScreen.widthPixels}`); // The absolute width of the screen in pixel
+        this.level_Position = new Array()
+        this.isVisible = false;
+        this.myAbsoluteLayout = <AbsoluteLayout>this.page.getViewById("stk");
         firebase.getCurrentUser()
             .then(result => {
                 console.log("main\n" +result.uid);
@@ -61,6 +58,7 @@ export class MainComponent implements OnInit {
                         this.image = user.data().image
                         this.level = user.data().level||1
                         this.score = user.data().score||0
+                        this.level_Position = user.data().levelPosition
                 })
             })
 
@@ -92,7 +90,7 @@ export class MainComponent implements OnInit {
                     }
                 }
                 //if(this.score>=22){
-                    this.router.navigate(['/puzzels/level1'], NavigationExtras)
+                    this.router.navigate(['/selectPuzzle'], NavigationExtras)
                 /*}
                 else{
                     this.router.navigate(['/puzzels/level1'], NavigationExtras)
@@ -106,9 +104,30 @@ export class MainComponent implements OnInit {
     }
 
     openArithmeticComp() {
-        setString("name", "" + this.name)
-        setString("image", "" + this.image)
+
         this.router.navigate(['/arithmetic/arithmetic1'])
 
     }
+    settingbtn(){
+        console.log("setting press");
+        setTimeout(()=>{
+            do {
+                this.myAbsoluteLayout.opacity +=0.25;
+            }while(this.myAbsoluteLayout.opacity != 1);
+                
+        },100);
+        this.isVisible = true;
+      
+    }
+    back(){
+        console.log("back press");
+        setTimeout(()=>{
+            do {
+                this.myAbsoluteLayout.opacity -=0.25;
+            }while(this.myAbsoluteLayout.opacity != 0);
+            
+        },100);
+        this.isVisible = false;
+    }
+    
 }

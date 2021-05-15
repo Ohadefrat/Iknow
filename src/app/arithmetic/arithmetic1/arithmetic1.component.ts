@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { RouterExtensions } from '@nativescript/angular';
 import { ActivatedRoute } from '@angular/router';
 import { Progress } from "tns-core-modules/ui/progress";
-import { Page } from 'tns-core-modules/ui/page';
+import { EventData, Page } from 'tns-core-modules/ui/page';
+import * as application from "tns-core-modules/application";
+
 
 
 @Component({
@@ -21,7 +23,14 @@ export class Arithmetic1Component implements OnInit {
   public progressvalue:number = 0
 
   constructor(private router: RouterExtensions,private page: Page) {
+    this.page.on(application.AndroidApplication.activityBackPressedEvent, this.onBackButtonTap, this);
 
+
+  }
+  onBackButtonTap(data: EventData) {
+      
+          this.router.navigate(['/arithmetic/arithmetic1']);
+     
   }
 
 
@@ -130,5 +139,8 @@ onValueChanged(args) {
     console.log("Old Value: " + args.oldValue);
     console.log("New Value: " + args.value);
 }*/
-
+back(){
+  console.log("back press");
+  this.router.navigate(["/main"]);
+}
 }  

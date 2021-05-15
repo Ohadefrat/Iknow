@@ -1,1 +1,10 @@
-<Button text="Login With Google" class="btn btn-primary" (tap)="loginWithGoogle()"></Button>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:Gif="nativescript-gif" loaded="pageLoaded($event)">
+    <GridLayout class="gridlbl">
+        <StackLayout class="stk_login">
+
+            <image class="logoimg" src="~/app/assets/logo.png"></image>
+            <AbsoluteLayout id="lbl" height=75 width=75></AbsoluteLayout>
+            <Button class="mgLBL" text="Login With Google" (tap)="loginWithGoogle()"></Button>
+        </StackLayout>
+    </GridLayout>
+</Page>

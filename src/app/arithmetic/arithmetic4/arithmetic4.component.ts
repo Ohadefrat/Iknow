@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { RouterExtensions } from '@nativescript/angular';
 import { ActivatedRoute } from '@angular/router';
 import { Progress } from "tns-core-modules/ui/progress";
-import { Page } from 'tns-core-modules/ui/page';
-
+import { EventData, Page } from 'tns-core-modules/ui/page';
+import * as application from "tns-core-modules/application";
 
 @Component({
   selector: 'ns-arithmetic4',
@@ -21,8 +21,16 @@ export class Arithmetic4Component implements OnInit {
   public progressvalue:number = 0
 
   constructor(private router: RouterExtensions,private page: Page) {
+    this.page.on(application.AndroidApplication.activityBackPressedEvent, this.onBackButtonTap, this);
+
 
   }
+  onBackButtonTap(data: EventData) {
+      
+          this.router.navigate(['/arithmetic/arithmetic4']);
+     
+  }
+
 
 
   ngOnInit(): void {
@@ -30,14 +38,68 @@ export class Arithmetic4Component implements OnInit {
     this.questionlist = new Array(20)
     for (let i = 0; i < this.questionlist.length; i++) {
       let q = {
-        n1: Math.floor(Math.random()*(10)),
-        n2: Math.floor(Math.random()*(10)),
+        n1: Math.floor(Math.random()*(100)),
+        n2: Math.floor(Math.random()*(100)),
         op: operatorlist[Math.floor(Math.random()*(3-0)-0)]
         }
+
+        if(i==0||i==2||i==5||i==9||i==10||i==12||i==14||i==18||i==20){
+          if( q.op != "/"){
+            q.op = "/"
+            if(i== 0){
+              q.n1= 8
+              q.n2 = 2
+            }
+            if(i== 2){
+              q.n1= 9
+              q.n2 = 3
+            }
+            if(i== 5){
+              q.n1= 16
+              q.n2 = 8
+            }
+            if(i== 9){
+              q.n1= 27
+              q.n2 = 9
+            }
+            if(i== 10){
+              q.n1= 20
+              q.n2 = 4
+            }
+            if(i== 12){
+              q.n1= 56
+              q.n2 = 4
+            }
+            if(i== 14){
+              q.n1= 63
+              q.n2 = 21
+            }
+            if(i== 18){
+              q.n1= 42
+              q.n2 = 7
+            }
+            if(i== 20){
+              q.n1= 81
+              q.n2 = 3
+            }
+          }
+          
+        }
+        else{
+          q.op=operatorlist[Math.floor(Math.random()*(2-0)-0)]
+        }
+
+
+  
+        
         if(q.n1 < q.n2 && (operatorlist[1]||operatorlist[3])){
-          q.n2=Math.floor(Math.random()*(10))
+          
+          
+          q.n2=Math.floor(Math.random()*(100))
           i--
         }
+
+        
         else{
           this.questionlist[i]=q
         }
@@ -121,6 +183,10 @@ export class Arithmetic4Component implements OnInit {
     
 
   }
+  back(){
+    console.log("back press");
+    this.router.navigate(["/main"]);
+}
   /*onProgressBarLoaded(args) {
     let myProgressBar = args.object as Progress;
 

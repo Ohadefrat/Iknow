@@ -2,30 +2,110 @@
 .mgLBL {
     width: 605px;
     height: 150px;
-    margin-top: 200px;
-    background: #FFF2C4;
+    margin-top: 250px;
+    background: #31c1ff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
+    
 }
-
+.android411 :host .mgLBL {
+    width: 605px;
+    height: 150px;
+    margin-top: 150px;
+    background: #31c1ff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    
+}
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 1000;
+}
+.gridlbl{
+    background: url("~/app/assets/background.jpg");
+   
+    width: 100%;
+}
 .logoutbtn{
     width: 605px;
     height: 150px;
     margin-top: 200px;
-    background: #FFF2C4;
+    background: #0091CF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
+    
+}
+.menuStk{
+    text-align: center;
+    margin-top:50px;
+    width: 100%;
 }
 
 .userimage{
     margin-top: 150px;
     border-radius: 75%;
-    width: 605px;
+    width: 305px;
+}
+.logoimg{
+    box-shadow: 0px 4px 4px rgba(0, 0, 5, 5);
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 .username{
     width: 605px;
     height: 150px;
-    margin-top: 100px;
-    font-size: 20px;
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
     
+}
+.usernameDtail{
+    width: 605px;
+    height: 150px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.stk{
+    opacity: 0;
+}
+.dialoglbl{
+    border: 1px solid black;
+
+    background: url("~/app/assets/card_img.jpg"); 
+    background-size: 1500px 1500px;
+    border-radius:20;
+
+    border-width:5px;  
+    border-style:solid;
+
+}
+.android360 :host .dialoglbl{
+    left: 0;
+    height: 380px;
+    width: 340px;
+}
+
+.dialoglblStk{
+    top:5%; 
+    left:75%;
+}
+
+.mgLBLlogout{
+    width: 605px;
+    height: 150px;
+    margin-top: 150px;
+    background: #31c1ff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+.android360 :host .dialoglblStk{
+
+    left:90%;
+    
+}
+.android411 :host .dialoglblStk{
+    left:50;
 }

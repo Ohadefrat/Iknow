@@ -1,16 +1,30 @@
+<GridLayout class="gridlbl">
+    
+
 <StackLayout>
-    
-    <Image  class="userimage" src="{{image}}"></Image>
-      
-    
-    <Label class ="lvllbl" text="Level {{level}}" textWrap="true"></Label>
-    <Label class ="scorelbl" text="Score: {{score}}" textWrap="true"></Label>
-    <Label class ="username" text="hello {{name}}" textWrap="true"></Label>
+    <image class="logoimg" src="~/app/assets/logo.png"></image>
+    <AbsoluteLayout> 
+    <StackLayout class="menuStk">
     <Button class="mgLBL" text="Puzzle" textWrap="true" (tap)="openPuzzleComp()"></Button>
     <Button class="mgLBL" text="Arithmetic" textWrap="true" (tap)="openArithmeticComp()"></Button>
-    <Button class="logoutbtn" text="Logout" class="btn btn-primary" (tap)="logoutGoogle()"></Button>
+    <Button class="mgLBL" text="Profile" textWrap="true" (tap)="settingbtn()"></Button>
+    </StackLayout>
+    </AbsoluteLayout>
+
 </StackLayout>
 
+<AbsoluteLayout id='stk'  class='stk' >
+    <AbsoluteLayout id="dialoglbl" class="dialoglbl" height="400" width="360" top="100" left="25" borderRadius="100">
+        <StackLayout class="dialoglblStk">
+            <Image  class="userimage" src="{{image}}"></Image>
+            <Label class ="username" text="hello {{name}}" textWrap="true" ></Label>
+            <Label class ="usernameDtail" text="Score: {{score}}" textWrap="true"  ></Label>
+            <Button *ngIf="isVisible" class="mgLBLlogout" text="Logout"  (tap)="logoutGoogle()" top="300" left="140" borderRadius="100" ></Button>
+        </StackLayout>
+        <Button text="&#xf060;" class="fas" (tap)="back()" borderRadius="100"></Button>
+    </AbsoluteLayout>
+</AbsoluteLayout>
 
+</GridLayout>
 
 

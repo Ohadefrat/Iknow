@@ -18,4 +18,7 @@ android {
   aaptOptions {
     additionalParameters "--no-version-vectors"
   }
+  project.ext {
+      googlePlayServicesVersion = "+"
+  }
 }

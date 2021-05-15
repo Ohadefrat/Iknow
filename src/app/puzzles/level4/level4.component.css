@@ -1,0 +1,228 @@
+.gridlo{
+    margin-top: 100px;
+    border: 1px solid black;
+    padding: 15px;
+    background: url("~/app/assets/background.jpg");
+   
+    width: 100%;
+}
+.gridlbl{
+    margin-top: 20px;
+    background: url("~/app/assets/background.jpg");
+   
+    width: 100%;
+}
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 1000;
+}
+.android360 :host .firstlbl{
+    border: 1px solid black;
+    background-image: url("~/app/assets/lion.jpg") black;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: 1000px 1100px;
+
+    background-position: -25% -45%;
+    border-width:5px;  
+    border-style:solid;
+}
+
+.stk{
+    opacity: 0;
+}
+
+.android360 :host .seclbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("~/app/assets/lion.jpg") black;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: 1000px 1100px;
+
+    background-position:  125% -45%;
+    border-width:5px;  
+    border-style:solid;
+}
+.android360 :host .trlbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("~/app/assets/lion.jpg") black;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: 1000px 1100px;
+    background-position:  125% 220%;
+    border-width:5px;  
+    border-style:solid;
+}
+.android360 :host .foulbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("~/app/assets/lion.jpg") black;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position:  -25% 220%;
+    background-size: 1000px 1100px;
+    border-width:5px;  
+    border-style:solid;
+}
+
+.borders{
+    border-width:5px;  
+    border-style:solid;
+    border-color: black;
+    
+}
+
+.picOne{
+    background-color: black;
+}
+/*.subbtn{
+    background-image: url("https://cdn4.iconfinder.com/data/icons/universal-icons/120/vector_288_02-512.png");
+    background-repeat: no-repeat;
+    background-size: 500 500;
+    height: 120;
+    width: 120;
+}*/
+.quizlbl{
+    border: 1px solid black;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    
+}
+
+
+.lvllbl{
+    text-align: center;
+    margin-top:150px;
+    font-size: 30px;
+    height: 300px;
+}
+
+.questionLBL{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(6, 2, 37)
+
+}
+.monkey{
+    text-align: center;
+    font-size: 20px;
+    color:rgb(0, 0, 0)
+}
+.word{
+    text-align: center;
+    font-size: 20px;
+    color:rgb(0, 0, 0)
+}
+
+.dialoglbl{
+    border: 1px solid black;
+
+    background: url("~/app/assets/card_img.jpg"); 
+    border-radius:20;
+
+    border-width:5px;  
+    border-style:solid;
+}
+
+.android360 :host .dialoglbl{
+    left: 0;
+    height: 380px;
+    width: 340px;
+}
+
+.android411 :host .firstlbl{
+    float: right;
+    border: 1px solid black;
+    background-image: url("~/app/assets/lion.jpg") black;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: 35% -40%;
+    background-size: 1280px 800px;
+    border-width:5px;  
+    border-style:solid;
+    
+}
+.android411 :host .seclbl{
+        float: right;
+        border: 1px solid black;
+        background-image: url("~/app/assets/lion.jpg") black;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        background-position:  80% -40%;
+        background-size: 1280px 800px;
+        border-width:5px;  
+        border-style:solid;
+    }
+.android411 :host  .trlbl{
+        float: right;
+        border: 1px solid black;
+        background-image: url("~/app/assets/lion.jpg") black;
+        background-repeat: no-repeat;
+
+        background-position:  80% 150%;
+        background-size: 1280px 800px;
+        border-width:5px;  
+        border-style:solid;
+    }
+.android411 :host  .foulbl{
+        float: right;
+        border: 1px solid black;
+        background-image: url("~/app/assets/lion.jpg") black;
+        background-repeat: no-repeat;
+
+        background-position:  35% 150%;
+        background-size: 1280px 800px;
+        border-width:5px;  
+        border-style:solid;
+    }
+
+    .firstcard1{
+        border: 1px solid;
+        border-color: rgb(255, 56, 56);
+        background: url("~/app/assets/card_background.jpg") white;
+        background-repeat: no-repeat;
+        background-size: 800px 800px;
+        border-width:5px;  
+        border-style:solid;
+    
+    }
+    .firstcard2{
+        border: 1px solid;
+        border-color: rgb(255, 56, 56);
+        background: url("~/app/assets/card_background.jpg") white;
+        background-repeat: no-repeat;
+        background-size: 800px 800px;
+        border-width:5px;  
+        border-style:solid;
+    
+    }
+    .firstcard3{
+        border: 1px solid;
+        border-color: rgb(255, 56, 56);
+        background: url("~/app/assets/card_background.jpg") white;
+        background-repeat: no-repeat;
+        background-size: 800px 800px;
+        border-width:5px;  
+        border-style:solid;
+    
+    }
+    .firstcard4{
+        border: 1px solid;
+        border-color: rgb(255, 56, 56);
+        background: url("~/app/assets/card_background.jpg") white ;
+        background-repeat: no-repeat;
+        background-size: 800px 800px;
+        background-position: 0% 0%;
+        border-width:5px;  
+        border-style:solid;
+    
+    }

@@ -1,0 +1,137 @@
+<AbsoluteLayout class="gridlbl">
+
+    <Label class ="lvllbl" text="Level {{level}}" textWrap="true"></Label>
+    <Label class ="namelbl" text="{{name}}" textWrap="true"></Label>
+    <Label class ="scorelbl" text="Score: {{score}}" textWrap="true"></Label>
+
+    <AbsoluteLayout class="gridlo" width="350" height="600">
+        <AbsoluteLayout class="firstlbl" id="firstlbl" text="" textWrap="true"top ="15" left="20" width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="seclbl" id="seclbl" text="" textWrap="true"top ="15" left="80" width="60" height="70"></AbsoluteLayout>    
+        <AbsoluteLayout class="trlbl" id="trlbl" text="" textWrap="true"  top="15" left="140" width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="foulbl" id="foulbl" text="" textWrap="true" top="15" left="200" width="60" height="70" ></AbsoluteLayout>
+        <AbsoluteLayout class="fivelbl" id="fivelbl" text="" textWrap="true"top ="15" left="260" width="60" height="70" ></AbsoluteLayout>
+        
+        <AbsoluteLayout class="sixlbl" id="sixlbl" text="" textWrap="true"top ="85" left="20" width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="sevenlbl" id="sevenlbl" text="" textWrap="true"top ="85" left="80" width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="eightlbl" id="eightlbl" text="" textWrap="true"top ="85" left="140" width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="ninelbl" id="ninelbl" text="" textWrap="true"top ="85" left="200"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="tenlbl" id="tenlbl" text="" textWrap="true"top ="85" left="260"width="60" height="70"></AbsoluteLayout>
+        
+        <AbsoluteLayout class="elevelbl" id="elevelbl" text="" textWrap="true"top ="155" left="20"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="twellbl" id="twellbl" text="" textWrap="true"top ="155" left="80"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="thrteennlbl" id="thrteennlbl" text="" textWrap="true"top ="155" left="140"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="forteenlbl" id="forteenlbl" text="" textWrap="true"top ="155" left="200"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="fivteenlbl" id="fivteenlbl" text="" textWrap="true"top ="155" left="260"width="60" height="70"></AbsoluteLayout>
+        
+        <AbsoluteLayout class="sixteenlbl" id="sixteenlbl" text="" textWrap="true"top ="225" left="20"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="seventeenlbl" id="seventeenlbl" text="" textWrap="true"top ="225" left="80"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="eightteenlbl" id="eightteenlbl" text="" textWrap="true"top ="225" left="140"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="nineteenlbl" id="nineteenlbl" text="" textWrap="true"top ="225" left="200"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="lbl_20" id="lbl_20" text="" textWrap="true"top ="225" left="260"width="60" height="70"></AbsoluteLayout>
+
+        <AbsoluteLayout class="lbl_21" id="lbl_21" text="" textWrap="true"top ="295" left="20"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="lbl_22" id="lbl_22" text="" textWrap="true"top ="295" left="80"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="lbl_23" id="lbl_23" text="" textWrap="true"top ="295" left="140"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="lbl_24" id="lbl_24" text="" textWrap="true"top ="295" left="200"width="60" height="70"></AbsoluteLayout>
+        <AbsoluteLayout class="lbl_25" id="lbl_25" text="" textWrap="true"top ="295" left="260"width="60" height="70"></AbsoluteLayout>
+
+        
+
+        <AbsoluteLayout class="firstcard1" id="firstcard1" #dragImage #ref left="140" top="400" width="60" height="70"
+            (pan)="onPan5(1,$event)" isEnabled={{firstlblEnable}}></AbsoluteLayout>
+            
+        <AbsoluteLayout class="firstcard2" id="firstcard2" #dragImage1 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(2,$event)" isEnabled="{{seclblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard3" id="firstcard3" #dragImage2 #ref left="140" top="400" width="60" height="70" (pan)="onPan5(3,$event)"
+            isEnabled="{{trlblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard4" id="firstcard4" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(4,$event)" isEnabled="{{foulblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard5" id="firstcard5" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(5,$event)" isEnabled="{{fivelblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard6" id="firstcard6" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(6,$event)" isEnabled="{{sixlblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard7" id="firstcard7" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(7,$event)" isEnabled="{{sevenlblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard8" id="firstcard8" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(8,$event)" isEnabled="{{eightlblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard9" id="firstcard9" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(9,$event)" isEnabled="{{ninelblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard10" id="firstcard10" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(10,$event)" isEnabled="{{tenlblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard11" id="firstcard11" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(11,$event)" isEnabled="{{elevelblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard12" id="firstcard12" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(12,$event)" isEnabled="{{twellblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard13" id="firstcard13" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(13,$event)" isEnabled="{{thrteenlblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard14" id="firstcard14" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(14,$event)" isEnabled="{{forteenlblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard15" id="firstcard15" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(15,$event)" isEnabled="{{fivteenlblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard16" id="firstcard16" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(16,$event)" isEnabled="{{sixteenlblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard17" id="firstcard17" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(17,$event)" isEnabled="{{seventeenlblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard18" id="firstcard18" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(18,$event)" isEnabled="{{eightteenlblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard19" id="firstcard19" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(19,$event)" isEnabled="{{nineteenlblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard20" id="firstcard20" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(20,$event)" isEnabled="{{teen20lblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard21" id="firstcard21" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(21,$event)" isEnabled="{{teen21lblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard22" id="firstcard22" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(22,$event)" isEnabled="{{teen22lblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard23" id="firstcard23" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(23,$event)" isEnabled="{{teen23lblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard24" id="firstcard24" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(24,$event)" isEnabled="{{teen24lblEnable}}"></AbsoluteLayout>
+
+        <AbsoluteLayout class="firstcard25" id="firstcard25" #dragImage3 #ref left="140" top="400" width="60" height="70"
+        (pan)="onPan5(25,$event)" isEnabled="{{teen25lblEnable}}"></AbsoluteLayout>
+    
+    </AbsoluteLayout>
+    <AbsoluteLayout>
+        <Button text="&#xf060;" class="fas" (tap)="back()" borderRadius="100" left="10" top="700" ></Button>
+    </AbsoluteLayout>
+    <AbsoluteLayout id='stk'  class='stk' >
+        <AbsoluteLayout id="dialoglbl" class="dialoglbl" height="400" width="360" top="100" left="25" borderRadius="100">
+            <Label class="questionLBL" textWrap="true"  text="The  _______  usually hunt&#xa; alone at  _____  time." top="50"
+                left="55"></Label>
+                <Label class="word" text="Lion" #word textWrap="true" top="200" left="50" (pan)="onPan6(1,$event)"
+                isEnabled={{firstWordlblEnable}}></Label>
+            <Label class="word" text="Night" #word textWrap="true" top="250" (pan)="onPan6(2,$event)" left="50"
+                isEnabled="{{secWordlblEnable}}"></Label>
+            <Label class="word" text="Baboon" #word textWrap="true" top="200" (pan)="onPan6(3,$event)" left="150"
+                isEnabled="{{trdWordlblEnable}}"></Label>
+            <Label class="word" text="Taiger" #word textWrap="true" top="250" (pan)="onPan6(4,$event)" left="150"
+                isEnabled="{{forWordlblEnable}}"></Label>
+            <Label class="word" text="Puma" #word textWrap="true" top="200" (pan)="onPan6(5,$event)" left="250"
+                isEnabled="{{fiveWordlblEnable}}"></Label>
+            <Label class="word" text="Light" #word textWrap="true" top="250" (pan)="onPan6(6,$event)" left="250"
+                isEnabled="{{sixWordlblEnable}}"></Label>
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+    </AbsoluteLayout>

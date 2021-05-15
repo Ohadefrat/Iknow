@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { RouterExtensions } from '@nativescript/angular';
 import { ActivatedRoute } from '@angular/router';
 import { Progress } from "tns-core-modules/ui/progress";
-import { Page } from 'tns-core-modules/ui/page';
-
+import { EventData, Page } from 'tns-core-modules/ui/page';
+import * as application from "tns-core-modules/application";
 
 @Component({
   selector: 'ns-arithmetic3',
@@ -21,8 +21,16 @@ export class Arithmetic3Component implements OnInit {
   public progressvalue:number = 0
 
   constructor(private router: RouterExtensions,private page: Page) {
+    this.page.on(application.AndroidApplication.activityBackPressedEvent, this.onBackButtonTap, this);
+
 
   }
+  onBackButtonTap(data: EventData) {
+      
+          this.router.navigate(['/arithmetic/arithmetic3']);
+     
+  }
+
 
 
   ngOnInit(): void {
@@ -34,6 +42,12 @@ export class Arithmetic3Component implements OnInit {
         n2: Math.floor(Math.random()*(10)),
         op: operatorlist[Math.floor(Math.random()*(3-0)-0)]
         }
+        if(i==0||i==4||i==7||i==15){
+          if( q.op != "*"){
+            q.op = "*"
+          }
+        }
+
         if(q.n1 < q.n2 && operatorlist[1]){
           q.n2=Math.floor(Math.random()*(10))
           i--
@@ -121,6 +135,10 @@ export class Arithmetic3Component implements OnInit {
     
 
   }
+  back(){
+    console.log("back press");
+    this.router.navigate(["/main"]);
+}
   /*onProgressBarLoaded(args) {
     let myProgressBar = args.object as Progress;
 

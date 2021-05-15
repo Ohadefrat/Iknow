@@ -1,0 +1,336 @@
+.gridlo{
+    margin-top: 100px;
+    border: 1px solid black;
+    padding: 15px;
+    background: url("~/app/assets/background.jpg");
+   
+    width: 100%;
+}
+.gridlbl{
+    margin-top: 20px;
+    background: url("~/app/assets/background.jpg");
+   
+    width: 100%;
+}
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 1000;
+}
+.firstlbl{
+    border: 1px solid black;
+    background: url("~/app/assets/hipo.jpg") white;
+    background-repeat: no-repeat;
+    background-size: 926px 1024px;
+    background-position: -30% -15%;
+    border-width:5px;  
+    border-style:solid;
+    
+}
+
+.seclbl{
+    border: 1px solid black;
+    background: url("~/app/assets/hipo.jpg") white;
+    background-repeat: no-repeat;
+    background-size: 926px 1024px;
+    background-position: 45% -15%;
+    border-width:5px;  
+    border-style:solid;
+}
+.trlbl{
+    border: 1px solid black;
+    background: url("~/app/assets/hipo.jpg") white;
+    background-repeat: no-repeat;
+    background-size: 926px 1024px;
+    background-position: 120% -15%;
+    border-width:5px;  
+    border-style:solid;
+}
+.foulbl{
+    border: 1px solid black;
+    background: url("~/app/assets/hipo.jpg") white;
+    background-repeat: no-repeat;
+    background-size: 926px 1024px;
+    background-position: -30% 50%;
+    border-width:5px;  
+    border-style:solid;
+}
+.fivelbl{
+    border: 1px solid black;
+    background: url("~/app/assets/hipo.jpg") white;
+    background-repeat: no-repeat;
+    background-size: 926px 1024px;
+    background-position: 45% 50%;
+    border-width:5px;  
+    border-style:solid;
+}
+.sixlbl{
+    border: 1px solid black;
+    background: url("~/app/assets/hipo.jpg") white;
+    background-repeat: no-repeat;
+    background-size: 926px 1024px;
+    background-position: 120% 50%;
+    border-width:5px;  
+    border-style:solid;
+}
+.sevenlbl{
+    border: 1px solid black;
+    background: url("~/app/assets/hipo.jpg") white;
+    background-repeat: no-repeat;
+    background-size: 926px 1024px;
+    background-position: -30% 113%;
+    border-width:5px;  
+    border-style:solid;
+}
+.eightlbl{
+    border: 1px solid black;
+    background: url("~/app/assets/hipo.jpg") white;
+    background-repeat: no-repeat;
+    background-size: 926px 1024px;
+    background-position: 45% 113%;
+    border-width:5px;  
+    border-style:solid;
+}
+.ninelbl{
+    border: 50px solid black;
+    background: url("~/app/assets/hipo.jpg") white;
+    background-repeat: no-repeat;
+    background-size: 926px 1024px;
+    background-position: 120% 113%;
+    border-width:5px;  
+    border-style:solid;
+    
+}
+.android411 :host .firstlbl{
+    border: 1px solid black;
+    background: url("~/app/assets/bear.png") white;
+    background-repeat: no-repeat;
+    background-size: 626px 724px;
+    background-position: -25% -5%;
+    border-width:5px;  
+    border-style:solid;
+    
+}
+
+.android411 :host .seclbl{
+    border: 1px solid black;
+    background: url("~/app/assets/bear.png") white;
+    background-repeat: no-repeat;
+    background-size: 626px 724px;
+    background-position: 45% -5%;
+    border-width:5px;  
+    border-style:solid;
+}
+.android411 :host .trlbl{
+    border: 1px solid black;
+    background: url("~/app/assets/bear.png") white;
+    background-repeat: no-repeat;
+    background-size: 626px 724px;
+    background-position: 120% -5%;
+    border-width:5px;  
+    border-style:solid;
+}
+.android411 :host .foulbl{
+    border: 1px solid black;
+    background: url("~/app/assets/bear.png") white;
+    background-repeat: no-repeat;
+    background-size: 626px 724px;
+    background-position: -25% 50%;
+    border-width:5px;  
+    border-style:solid;
+}
+.android411 :host .fivelbl{
+    border: 1px solid black;
+    background: url("~/app/assets/bear.png") white;
+    background-repeat: no-repeat;
+    background-size: 626px 724px;
+    background-position: 45% 50%;
+    border-width:5px;  
+    border-style:solid;
+}
+.android411 :host .sixlbl{
+    border: 1px solid black;
+    background: url("~/app/assets/bear.png") white;
+    background-repeat: no-repeat;
+    background-size: 626px 724px;
+    background-position: 120% 50%;
+    border-width:5px;  
+    border-style:solid;
+}
+.android411 :host .sevenlbl{
+    border: 1px solid black;
+    background: url("~/app/assets/bear.png") white;
+    background-repeat: no-repeat;
+    background-size: 626px 724px;
+    background-position: -25% 105%;
+    border-width:5px;  
+    border-style:solid;
+}
+.android411 :host .eightlbl{
+    border: 1px solid black;
+    background: url("~/app/assets/bear.png") white;
+    background-repeat: no-repeat;
+    background-size: 626px 724px;
+    background-position: 45% 105%;
+    border-width:5px;  
+    border-style:solid;
+}
+.android411 :host .ninelbl{
+    border: 50px solid black;
+    background: url("~/app/assets/bear.png") white;
+    background-repeat: no-repeat;
+    background-size: 626px 724px;
+    background-position: 120% 105%;
+    border-width:5px;  
+    border-style:solid;
+    
+}
+.borders{
+    border-width:5px;  
+    border-style:solid;
+    border-color: black;
+    
+}
+
+
+.quizlbl{
+    border: 1px solid black;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    
+}
+
+.stk{
+    opacity: 0;
+}
+.lvllbl{
+    text-align: center;
+    margin-top:150px;
+    font-size: 30px;
+    height: 300px;
+}
+
+.word{
+    text-align: center;
+    font-size: 20px;
+    color:rgb(0, 0, 0)
+}
+.questionLBL{
+    text-align: center;
+
+    font-size: 20px;
+    color: rgb(6, 2, 37)
+
+}
+.android360 :host .dialoglbl{
+    left: 0;
+    height: 380px;
+    width: 340px;
+}
+
+.dialoglbl{
+    border: 1px solid black;
+
+    background: url("~/app/assets/card_img.jpg"); 
+    border-radius:20;
+
+    border-width:5px;  
+    border-style:solid;
+
+}
+.firstcard1{
+    border: 1px solid;
+    border-color: rgb(255, 56, 56);
+    background: url("~/app/assets/card_background.jpg") white;
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    border-width:5px;  
+    border-style:solid;
+
+}
+.firstcard2{
+    border: 1px solid;
+    border-color: rgb(255, 56, 56);
+    background: url("~/app/assets/card_background.jpg") white;
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    border-width:5px;  
+    border-style:solid;
+
+}
+.firstcard3{
+    border: 1px solid;
+    border-color: rgb(255, 56, 56);
+    background: url("~/app/assets/card_background.jpg") white;
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    border-width:5px;  
+    border-style:solid;
+
+}
+.firstcard4{
+    border: 1px solid;
+    border-color: rgb(255, 56, 56);
+    background: url("~/app/assets/card_background.jpg") white ;
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: 0% 0%;
+    border-width:5px;  
+    border-style:solid;
+
+}
+.firstcard5{
+    border: 1px solid;
+    border-color: rgb(255, 56, 56);
+    background: url("~/app/assets/card_background.jpg") white ;
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: 0% 0%;
+    border-width:5px;  
+    border-style:solid;
+
+}
+.firstcard6{
+    border: 1px solid;
+    border-color: rgb(255, 56, 56);
+    background: url("~/app/assets/card_background.jpg") white ;
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: 0% 0%;
+    border-width:5px;  
+    border-style:solid;
+
+}
+.firstcard7{
+    border: 1px solid;
+    border-color: rgb(255, 56, 56);
+    background: url("~/app/assets/card_background.jpg") white ;
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: 0% 0%;
+    border-width:5px;  
+    border-style:solid;
+
+}
+.firstcard8{
+    border: 1px solid;
+    border-color: rgb(255, 56, 56);
+    background: url("~/app/assets/card_background.jpg") white ;
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: 0% 0%;
+    border-width:5px;  
+    border-style:solid;
+
+}
+.firstcard9{
+    border: 1px solid;
+    border-color: rgb(255, 56, 56);
+    background: url("~/app/assets/card_background.jpg") white ;
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: 0% 0%;
+    border-width:5px;  
+    border-style:solid;
+
+}
